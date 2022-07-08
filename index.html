@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT-AWESOME -->
+    <script src="https://kit.fontawesome.com/62f218b1b2.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <!-- SWEET-ALERT2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>TO DO LIST</title>
+</head>
+<body>
+    <section class="container">
+
+        <div class="perfil">
+            <div id="fecha"></div>
+            <h1>Hola, ¿qué tal?</h1>
+            <span>¿Que taréas tenemos para el día de hoy?</span>
+        </div>
+
+        <div class="agregar-tarea">
+            <input type="text" id="input" placeholder="agregar una tarea">
+            <i id="enter" class="fas fa-plus-circle"></i>
+        </div>
+
+        <div class="seccion-tarea">
+            <h3>Estas son tus tareas pendientes</h3>
+            <ul id="lista">
+                <!-- <li>
+                    <i class="far fa-circle co" data="realizado" id=""></i>
+                    <p class="text"></p>
+                    <i class="fas fa-trash de" data="eliminado" id=""></i>
+                </li> -->
+            </ul>
+        </div>
+
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

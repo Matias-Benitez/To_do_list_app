@@ -37,9 +37,6 @@ function tareaRealizada(element) {
     element.classList.toggle(uncheck);
     element.parentNode.querySelector('.text').classList.toggle(lineThrough)
     LIST[element.id].realizado = LIST[element.id].realizado ?false :true;
-    console.log(LIST);
-    console.log(LIST[element.id]);
-    console.log(LIST[element.id].realizado);
 }
 
 //funcion de tarea eliminada
@@ -97,6 +94,23 @@ lista.addEventListener('click',function(event){
         tareaRealizada(element);
     }
     else if (elementData==='eliminado'){
+        Swal.fire({
+            title: 'Estás seguro de borrar?',
+            text: "No podrás revertir esto!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si, borrar tarea!'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              Swal.fire(
+                'Tarea borrada!',
+                'Tu tarea fue borrada exitosamente.',
+                'success'
+              )
+            }
+          })
         tareaEliminada(element);
     }
     localStorage.setItem('TODO',JSON.stringify(LIST))

@@ -17,30 +17,36 @@
     <title>TO DO LIST</title>
 </head>
 <body>
-    <section class="container">
+    <section class="container"> 
+        <div id="fecha"></div> 
+
+        <div id="clima">
+            <div id="box1">
+                <h4 id="ubicacion"></h4>
+                <img id="icono-animado" src="" alt="" height="72" width="72">
+            </div>
+            <div id="box2">
+                <h4 id="temperatura-valor"></h4>
+                <h4 id="temperatura-descripcion"></h4>
+            </div>
+            <div id="box3">
+                <h4>Veloc. del viento</h4>
+                <h4 id="viento-velocidad"></h4>
+            </div>
+        </div>
 
         <div class="perfil">
-            <div id="fecha"></div>
             <h1>Hola, ¿qué tal?</h1>
             <span>¿Que taréas tenemos para el día de hoy?</span>
         </div>
-
         <div class="agregar-tarea">
             <input type="text" id="input" placeholder="agregar una tarea">
             <i id="enter" class="fas fa-plus-circle"></i>
         </div>
-
         <div class="seccion-tarea">
             <h3>Estas son tus tareas pendientes</h3>
-            <ul id="lista">
-                <!-- <li>
-                    <i class="far fa-circle co" data="realizado" id=""></i>
-                    <p class="text"></p>
-                    <i class="fas fa-trash de" data="eliminado" id=""></i>
-                </li> -->
-            </ul>
+            <ul id="lista"></ul>
         </div>
-
     </section>
     <script src="app.js"></script>
 </body>
